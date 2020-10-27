@@ -1,0 +1,11 @@
+---
+title: "Week 4, Part 1 Condience intervals and t-tests lab"
+author: "Elmera Azadpour"
+date: "10/27/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
