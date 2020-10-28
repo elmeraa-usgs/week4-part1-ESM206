@@ -9,3 +9,34 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## 1. Confidence intervals
+
+```{r}
+otter_length <- c(38,41,50,27,32,41,48,60,43)
+
+t.test(otter_length)
+```
+## confidence interval means we would expect to find the pop mean within the range for the confidence interval presented
+
+
+## 2. T-test (1-sample t-test)
+
+See a claim: mean otter length is 50 inches 
+
+```{r}
+otter_test <- t.test(x=otter_length, mu=50)
+otter_test
+```
+# alt hypothesis is meaningful now. Find that 0.0444 = p, if pop mean really is 50 in then there is 4.44% chance that I could have randomly taken a sample that has a mean that is a least as different from 50 as my sample mean is in either directions
+
+## 3. Two sample t-test
+
+```{r}
+desert_bighorns <- c(32,44,18,26,50,33,42,20)
+sierra_bighorns <- c(28,31,40,42,26,29,31)
+
+t.test(x=desert_bighorns, y=sierra_bighorns)
+```
+
+
+
